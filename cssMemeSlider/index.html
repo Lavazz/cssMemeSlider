@@ -7,31 +7,27 @@
       <link rel="stylesheet" type="text/css" href="style.css">
    </head>
    <body>
-      <div class="container">
-         <div id="slider">
-            <div id="slides">
-               <div id="overflow">
-                  <div class="img">
-                     <div><img src="accets/2015_03_21_f3d86c4861670fe36e7b1e6ea481ac6a.jpg" alt="first_mem">
-                     <p>Description 1</p>
-                    </div>
-                     <div><img src="accets/2015_03_21_4681fff3fca91fc025db1ded7b612136.jpg" alt="second_mem">
-                        <p>Description 1</p>
-                    </div>
-                     <div><img src="accets/2015_03_21_b5cd9d10785f3a32f2280ea12ee58be9.jpg" alt="therd_mem">
-                        <p>Description 1</p>
-                    </div>
-                     <div><img src="accets/2015_10_28_20_10_03_3612f0aa3188256eadfa9679e87453f0.jpg" alt="fourse_mem">
-                        <p>Description 1</p>
-                    </div>
-                  </div>
-               </div>
-            </div>
-            <input checked type="radio" name="slider" id="switch1">
-            <input type="radio" name="slider" id="switch2">
-            <input type="radio" name="slider" id="switch3">
-            <input type="radio" name="slider" id="switch4">
-         </div>
-      </div>
+      <div class="wrapper">
+        <input type="radio" name="point" id="slide1" checked>
+        <input type="radio" name="point" id="slide2">
+        <input type="radio" name="point" id="slide3">
+        <input type="radio" name="point" id="slide4">
+        <div class="slider">
+            <div class="slides slide1"><img src="accets/cat.jpg" alt="first_mem">
+                <p>Description 1</p></div>
+            <div class="slides slide2"><img src="accets/2015_03_21_4681fff3fca91fc025db1ded7b612136.jpg" alt="second_mem">
+                <p>Description 2</p></div>
+            <div class="slides slide3"><img src="accets/2015_03_21_b5cd9d10785f3a32f2280ea12ee58be9.jpg" alt="therd_mem" style="width:750px;">
+                <p>Description 3</p></div>
+            <div class="slides slide4"><img src="accets/71af2d50ef5492f8b98fda01f49e48d0.jpg" alt="fourse_mem">
+                <p>Description 4</p></div>
+        </div>	
+        <div class="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+    </div>
    </body>
 </html>
