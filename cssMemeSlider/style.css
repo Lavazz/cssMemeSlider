@@ -12,14 +12,14 @@ body {
 }
 
 .wrapper {
-	height: 35em;
+	height: 37em;
 	margin: 3em auto 0;
 	position: relative;
 	width: 70em;
 }
 
 .slider {
-	margin-left: 15%;
+	margin-left: 12%;
 	height: inherit;
 	overflow: hidden;
 	position: relative;
@@ -41,10 +41,16 @@ body {
 	background-color: black;
 }
 
-.wrapper .controls {
+.slides img{
+	width:50em;
+}
+
+.controls {
 	left: 50%;
-	margin-left: -98px;
+	margin-left: 13em;
+	top: 33em;
 	position: absolute;
+	z-index: 1;
 }
 
 .wrapper label:after {
@@ -117,4 +123,38 @@ body {
 
 p{
 	color: white;
+	margin: 0.3em;
+	font-size: 1.5em;
+}
+
+
+/* media */
+@media (max-width: 500px){
+
+	.wrapper {
+		height: 37em;
+		margin: 3em auto 0;
+		position: relative;
+		width: 70em;
+	}
+
+	.controls {
+		left: 20%;
+		top: 33em;
+	}
+
+	.slider {
+		margin-left: 17%;
+	}
+
+	p{
+	bottom: -0.4em;
+    position: absolute;
+    color: white;
+    margin: 0.3em;
+    font-size: 1.5em;
+    z-index: 1;
+	}
+
+
 }
